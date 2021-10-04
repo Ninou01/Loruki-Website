@@ -1,0 +1,365 @@
+:root {
+  --primary-color: hsl(210deg, 97%, 47%);
+  --secondary-color: hsl(225, 71%, 38%);
+  --night-blue: hsl(208, 100%, 13%);
+  --black: #333;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: var(--black);
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1020px;
+  margin: auto;
+  padding: 0 50px;
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.title {
+  font-weight: 300;
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Lato', sans-serif;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+header {
+  padding: 25px 0 100px;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .title {
+  font-size: 1.8rem;
+  line-height: 0.5;
+}
+
+header nav {
+  width: 230px;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+}
+
+.hero {
+  padding-bottom: 55px;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero * {
+  position: relative;
+  z-index: 1;
+}
+
+.hero .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 41px;
+  padding: 0 60px;
+}
+
+.hero .container .hero__description .hero__title {
+  font-size: 2.3rem;
+  margin: 20px 0;
+}
+
+.hero .container .hero__description p {
+  line-height: 23px;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.hero .container .hero__description input[type=button] {
+  border: 1px solid #fff;
+  padding: 13px 30px;
+  font-size: 0.9rem;
+}
+
+.hero .container .form {
+  padding: 45px 30px 30px 30px;
+  width: 550px;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #000;
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.271);
+          box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.271);
+}
+
+.hero .container .form form > *:not([type=submit]) {
+  margin-bottom: 30px;
+  display: block;
+  width: 100%;
+}
+
+.hero .container .form h3 {
+  font-size: 1.3rem;
+}
+
+.hero .container .form input:not([type=submit]) {
+  border: none;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.322);
+  font-size: .9rem;
+}
+
+.hero .container .form input[type=submit] {
+  font-size: 0.75rem;
+  padding: 9px 25px;
+}
+
+.hero::before {
+  content: '';
+  background-color: #fff;
+  width: 100%;
+  height: 68px;
+  position: absolute;
+  bottom: 0;
+}
+
+.hero::after {
+  content: '';
+  background-color: #fff;
+  width: 100%;
+  height: 90px;
+  position: absolute;
+  bottom: 1px;
+  -webkit-transform: skewY(-3deg);
+          transform: skewY(-3deg);
+}
+
+.services {
+  padding-bottom: 30px;
+}
+
+.services__description {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+.services__cards {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.services__cards .card {
+  text-align: center;
+}
+
+.services__cards .card i {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.services__cards .card h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.services__cards .card span {
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+.services__cli {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services__cli img {
+  width: 60%;
+}
+
+.services__cli > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 160px;
+}
+
+.services__cli-description {
+  font-weight: 700;
+  padding: 18px 28px 18px 15px;
+  -webkit-box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.271);
+          box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.271);
+  border-radius: 8px;
+}
+
+.cloud {
+  padding: 30px 0;
+}
+
+.cloud .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cloud__image img {
+  max-width: 355px;
+}
+
+.cloud__description {
+  text-align: center;
+}
+
+.cloud__description .cloud__title {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.cloud__description p {
+  margin-bottom: 15px;
+}
+
+.cloud__description input[type=button] {
+  background-color: var(--night-blue);
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.supported {
+  padding: 30px 0 35px;
+}
+
+.supported__title {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.supported__languages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 19px;
+}
+
+.supported__languages .language {
+  text-align: center;
+  padding: 20px 15px;
+  -webkit-box-shadow: 0 2px 10px -1px #00000052;
+          box-shadow: 0 2px 10px -1px #00000052;
+  border-radius: 10px;
+}
+
+.supported__languages .language h3 {
+  margin-bottom: 15px;
+}
+
+footer {
+  background-color: var(--night-blue);
+  height: 200px;
+}
+
+footer .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+footer .copyright {
+  color: #fff;
+}
+
+footer .copyright h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+footer .links a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+footer .social-media {
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 25px;
+}

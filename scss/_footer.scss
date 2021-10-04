@@ -1,0 +1,35 @@
+footer {
+    background-color: var(--night-blue);
+    height: 200px;
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        align-items: center;
+        height: 100%;
+    }
+
+    .copyright {
+        color: #fff;
+
+        h3 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+    }
+
+    .links {
+        
+        a {
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+
+    .social-media {
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        grid-gap: 25px;
+    }
+}

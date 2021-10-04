@@ -1,0 +1,61 @@
+.services {
+    padding-bottom: 30px;
+
+    &__description {
+        width: 50%;
+        margin: auto;
+        margin-bottom: 30px;
+        text-align: center;
+        font-weight: 700;
+        line-height: 25px;
+    }
+
+    &__cards {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-around;
+
+        .card {
+            text-align: center;
+
+            i {
+                font-size: 2.5rem;
+                margin-bottom: 10px;
+            }
+
+            h3 {
+                font-size: 2rem;
+                margin-bottom: 15px;
+            }
+
+            span {
+                font-weight: 700;
+                color: var(--secondary-color);               
+            }
+        }
+    }
+
+    &__cli {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        img {
+            width: 60%;
+        }
+
+        > div {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 160px;
+        }
+
+        &-description {
+            font-weight: 700;
+            padding: 18px 28px 18px 15px;
+            box-shadow: 0 3px 10px 0px hsla(0, 0%, 0%, 0.271);
+            border-radius: 8px;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+:root {
+    --primary-color: hsl(210deg, 97%, 47%);
+    --secondary-color: hsl(225, 71%, 38%);
+    --night-blue: hsl(208, 100%, 13%);
+    --black: #333;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--black);
+    font-family: 'Lato', sans-serif;;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1020px;
+    margin: auto;
+    padding: 0 50px;
+}
+
+.bg-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.title {
+    font-weight: 300;
+}
+
+.btn {
+    cursor: pointer; 
+    border-radius: 5px;
+    border: none;
+    font-family: 'Lato', sans-serif;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: var(--primary-color);
+}
+

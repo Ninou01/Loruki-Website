@@ -1,0 +1,35 @@
+.cloud {
+    padding: 30px 0;
+
+    .container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    &__image {
+        img {
+            max-width: 355px;
+        }
+    }
+
+    &__description {
+        text-align: center;
+
+        .cloud__title {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+
+        input[type=button] {
+            background-color: var(--night-blue);
+            color: #fff;
+            padding: 10px 20px;
+        }
+    }
+
+}
