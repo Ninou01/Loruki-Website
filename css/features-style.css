@@ -1,0 +1,244 @@
+:root {
+  --primary-color: hsl(210deg, 97%, 47%);
+  --secondary-color: hsl(225, 71%, 38%);
+  --night-blue: hsl(208, 100%, 13%);
+  --black: #333;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: var(--black);
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1020px;
+  margin: auto;
+  padding: 0 50px;
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.title {
+  font-weight: 300;
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Lato', sans-serif;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+.shadow {
+  -webkit-box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.271);
+          box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.271);
+  border-radius: 10px;
+}
+
+.features-hero {
+  padding-bottom: 25px;
+}
+
+.features-hero .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 55px;
+}
+
+.features-hero__description {
+  max-width: 53%;
+}
+
+.features-hero__description h2 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.features-hero__description p {
+  font-size: 1.2rem;
+  line-height: 30px;
+}
+
+.features-hero__image img {
+  width: 200px;
+}
+
+.platform {
+  background-color: #f4f4f4;
+  padding: 30px 0;
+}
+
+.platform .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 55px;
+}
+
+.platform__description {
+  max-width: 53%;
+}
+
+.platform__description h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.platform__description p {
+  line-height: 23px;
+}
+
+.platform__image img {
+  width: 300px;
+}
+
+.features-grid {
+  padding: 50px 0 30px;
+  margin-bottom: 30px;
+}
+
+.features-grid .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[3];
+  -ms-grid-columns: (1fr)[3];
+      grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+  grid-gap: 20px 35px;
+  padding: 0 55px;
+}
+
+.features-grid .container > * {
+  padding: 30px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features-grid .container > * i {
+  font-size: 2.5rem;
+  padding-right: 20px;
+}
+
+.features-grid .grid-child-1 {
+  grid-column: span 3;
+}
+
+.features-grid .grid-child-2 {
+  grid-column: span 2;
+}
+
+header {
+  padding: 25px 0 100px;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .title {
+  font-size: 1.8rem;
+  line-height: 0.5;
+}
+
+header nav {
+  width: 230px;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+}
+
+footer {
+  background-color: var(--night-blue);
+  height: 200px;
+}
+
+footer .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+footer .copyright {
+  color: #fff;
+}
+
+footer .copyright h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+footer .links a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+footer .social-media {
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 25px;
+}
+
+header {
+  padding-bottom: 50px;
+}

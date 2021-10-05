@@ -54,6 +54,7 @@ a {
 .shadow {
   -webkit-box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.271);
           box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.271);
+  border-radius: 10px;
 }
 
 header {
@@ -129,7 +130,6 @@ header nav ul {
 .hero .container .form {
   padding: 45px 30px 30px 30px;
   width: 550px;
-  border-radius: 10px;
   background-color: #fff;
   color: #000;
 }
@@ -248,7 +248,6 @@ header nav ul {
 .services__cli-description {
   font-weight: 700;
   padding: 18px 28px 18px 15px;
-  border-radius: 8px;
 }
 
 .cloud {
@@ -315,7 +314,6 @@ header nav ul {
 .supported__languages .language {
   text-align: center;
   padding: 20px 15px;
-  border-radius: 10px;
 }
 
 .supported__languages .language h3 {

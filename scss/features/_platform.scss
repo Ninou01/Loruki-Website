@@ -1,0 +1,30 @@
+.platform {
+    background-color: #f4f4f4;
+    padding: 30px 0;
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 55px;
+    }
+
+    &__description {
+        max-width: 53%;
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;            
+        }
+
+        p {
+            line-height: 23px;
+        }
+    }
+
+    &__image {
+        img {
+            width: 300px;
+        }
+    }
+}

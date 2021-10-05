@@ -1,0 +1,30 @@
+.features-grid {
+    padding: 50px 0 30px;
+    margin-bottom: 30px;
+    
+    .container {
+        display: grid;
+        grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+        grid-gap: 20px 35px;
+        padding: 0 55px;
+
+        > * {
+            padding: 30px 20px;
+            display: flex;
+            align-items: center;
+
+            i {
+                font-size: 2.5rem;
+                padding-right: 20px;               
+            }
+        }
+    }
+
+    .grid-child-1 {
+        grid-column: span 3;
+    }
+
+    .grid-child-2 {
+        grid-column: span 2;
+    }
+}
