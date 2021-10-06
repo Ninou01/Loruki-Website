@@ -236,6 +236,13 @@ header nav ul li:hover {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .home-hero .form {
+    padding: 40px;
+    max-width: 320px;
+  }
+}
+
 .services {
   padding-bottom: 30px;
 }
