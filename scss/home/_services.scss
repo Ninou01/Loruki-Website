@@ -1,6 +1,12 @@
 .services {
     padding-bottom: 30px;
 
+    .container {
+        > div:first-child {
+            animation: services-animation 1000ms ease-in-out;
+        }
+    }
+
     &__description {
         width: 50%;
         margin: auto;
@@ -59,9 +65,20 @@
     }
 }
 
+@keyframes services-animation {
+    from {
+        transform: translateY(200%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
 @media screen and (max-width: 769px) {
 
     .services {
+        overflow-x: hidden;
 
         &__description {
             width: 100%;
