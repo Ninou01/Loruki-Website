@@ -41,21 +41,20 @@
             width: 550px;
             background-color: #fff;
             color: #000;
-
-            form > *:not([type=submit]) {
-                margin-bottom: 30px;
-                display: block;
-                width: 100%;
-            }
-
+            
             h3 {
+                margin-bottom: 30px;
                 font-size: 1.3rem;
             }
 
             input:not([type=submit]) {
+                display: block;
+                width: 100%;
+                margin-bottom: 30px;
                 border: none;
                 border-bottom: 0.5px solid hsla(0, 0%, 0%, 0.322);
                 font-size: .9rem;
+                outline: none;
             }
 
             input[type=submit] {
