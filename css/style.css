@@ -339,7 +339,7 @@ header nav ul li:hover {
             flex-direction: column;
   }
   .services__cli img {
-    width: 100%;
+    width: 125%;
   }
   .services__cli > div {
     width: 100%;
