@@ -267,16 +267,16 @@ header nav ul li:hover {
 
 @media screen and (max-width: 769px) {
   .documentation .container {
-    -ms-grid-rows: (1fr)[3];
+    -ms-grid-rows: (1fr)[16];
     -ms-grid-columns: 1fr;
-        grid-template: repeat(3, 1fr)/1fr;
+        grid-template: repeat(16, 1fr)/1fr;
   }
   .documentation__links {
-    grid-row: span 1;
+    grid-row: span 5;
   }
   .documentation__introduction {
     grid-column: span 1;
-    grid-row: span 2;
+    grid-row: span 11;
   }
 }
 
