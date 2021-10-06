@@ -58,7 +58,7 @@ a {
 }
 
 header {
-  padding: 25px 0 100px;
+  padding: 25px 0 50px;
   background-color: var(--primary-color);
   color: #fff;
 }
@@ -90,19 +90,19 @@ header nav ul {
   list-style: none;
 }
 
-.hero {
-  padding-bottom: 55px;
+.home-hero {
+  padding: 55px 0;
   margin-bottom: 15px;
   position: relative;
   overflow: hidden;
 }
 
-.hero * {
+.home-hero * {
   position: relative;
   z-index: 1;
 }
 
-.hero .container {
+.home-hero .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,52 +110,52 @@ header nav ul {
   padding: 0 60px;
 }
 
-.hero .container .hero__description .hero__title {
+.home-hero .container .home-hero__description .home-hero__title {
   font-size: 2.3rem;
   margin: 20px 0;
 }
 
-.hero .container .hero__description p {
+.home-hero .container .home-hero__description p {
   line-height: 23px;
   font-size: 0.9rem;
   margin-bottom: 20px;
 }
 
-.hero .container .hero__description input[type=button] {
+.home-hero .container .home-hero__description input[type=button] {
   border: 1px solid #fff;
   padding: 13px 30px;
   font-size: 0.9rem;
 }
 
-.hero .container .form {
+.home-hero .container .form {
   padding: 45px 30px 30px 30px;
   width: 550px;
   background-color: #fff;
   color: #000;
 }
 
-.hero .container .form form > *:not([type=submit]) {
+.home-hero .container .form form > *:not([type=submit]) {
   margin-bottom: 30px;
   display: block;
   width: 100%;
 }
 
-.hero .container .form h3 {
+.home-hero .container .form h3 {
   font-size: 1.3rem;
 }
 
-.hero .container .form input:not([type=submit]) {
+.home-hero .container .form input:not([type=submit]) {
   border: none;
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.322);
   font-size: .9rem;
 }
 
-.hero .container .form input[type=submit] {
+.home-hero .container .form input[type=submit] {
   font-size: 0.75rem;
   padding: 9px 25px;
 }
 
-.hero::before {
+.home-hero::before {
   content: '';
   background-color: #fff;
   width: 100%;
@@ -164,7 +164,7 @@ header nav ul {
   bottom: 0;
 }
 
-.hero::after {
+.home-hero::after {
   content: '';
   background-color: #fff;
   width: 100%;

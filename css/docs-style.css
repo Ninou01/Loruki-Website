@@ -124,77 +124,87 @@ header nav ul {
   width: 200px;
 }
 
-.platform {
-  background-color: #f4f4f4;
-  padding: 30px 0;
+.documentation {
+  padding: 35px 0;
 }
 
-.platform .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 55px;
-}
-
-.platform__description {
-  max-width: 53%;
-}
-
-.platform__description h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.platform__description p {
-  line-height: 23px;
-}
-
-.platform__image img {
-  width: 300px;
-}
-
-.features-grid {
-  padding: 50px 0 30px;
-  margin-bottom: 30px;
-}
-
-.features-grid .container {
+.documentation .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (1fr)[3];
+  -ms-grid-rows: (1fr)[7];
   -ms-grid-columns: (1fr)[3];
-      grid-template: repeat(3, 1fr)/repeat(3, 1fr);
-  grid-gap: 20px 35px;
-  padding: 0 55px;
+      grid-template: repeat(7, 1fr)/repeat(3, 1fr);
+  grid-gap: 35px;
 }
 
-.features-grid .container > * {
-  padding: 30px 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.documentation .subtitle {
+  margin: 20px 0;
 }
 
-.features-grid .container > * i {
-  font-size: 2.5rem;
-  padding-right: 20px;
+.documentation__links {
+  grid-row: span 4;
+  padding: 30px;
+  background-color: #f4f4f4;
 }
 
-.features-grid .grid-child-1 {
-  grid-column: span 3;
+.documentation__links a {
+  display: block;
+  color: var(--black);
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+  padding: 7px 0;
 }
 
-.features-grid .grid-child-2 {
+.documentation__links span {
+  color: var(--primary-color);
+}
+
+.documentation__introduction {
   grid-column: span 2;
+  grid-row: span 7;
+  padding: 20px;
+}
+
+.documentation__introduction .title {
+  margin: 10px 0;
+  font-size: 1.6rem;
+}
+
+.documentation__introduction p:not(:nth-of-type(3)) {
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+
+.documentation__introduction li {
+  background-color: #5cb85c;
+  color: #fff;
+  padding: 15px 35px;
+  font-weight: bold;
+  list-style-type: none;
+  position: relative;
+}
+
+.documentation__introduction li::before {
+  content: "\2139";
+  position: absolute;
+  top: 7px;
+  left: 18px;
+  font-size: 1.6rem;
+}
+
+.documentation__introduction input[type="button"] {
+  padding: 12px 25px;
+  font-size: 1rem;
+}
+
+.documentation__introduction code {
+  background-color: var(--black);
+  color: #fff;
+  padding: 13px 20px;
+  display: block;
+}
+
+.documentation__introduction code:not(:last-of-type()) {
+  margin-bottom: 10px;
 }
 
 footer {
