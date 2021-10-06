@@ -31,5 +31,24 @@ footer {
         display: flex;
         justify-content: center;
         grid-gap: 25px;
+
+        .fa- {
+            
+            &github:hover {
+                color: #000;
+            }
+
+            &facebook:hover {
+                color: #1875ea;
+            }
+
+            &instagram:hover {
+                color: #d4465c;
+            }
+
+            &twitter:hover {
+                color: #1c9cea;
+            }
+        }
     }
 }

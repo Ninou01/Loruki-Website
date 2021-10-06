@@ -46,6 +46,11 @@ a {
   font-family: 'Lato', sans-serif;
 }
 
+.btn:hover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
 .btn-primary {
   color: #fff;
   background-color: var(--primary-color);
@@ -88,6 +93,16 @@ header nav ul {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   list-style: none;
+}
+
+header nav ul li {
+  padding: 0 10px 8px;
+  border-bottom: 2px solid transparent;
+  padding-top: 0;
+}
+
+header nav ul li:hover {
+  border-bottom: 2px solid white;
 }
 
 .home-hero {
@@ -286,7 +301,8 @@ header nav ul {
 .cloud__description input[type=button] {
   background-color: var(--night-blue);
   color: #fff;
-  padding: 10px 20px;
+  padding: 13px 24px;
+  font-size: 1rem;
 }
 
 .supported {
@@ -314,6 +330,13 @@ header nav ul {
 .supported__languages .language {
   text-align: center;
   padding: 20px 15px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.supported__languages .language:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
 }
 
 .supported__languages .language h3 {
@@ -359,4 +382,20 @@ footer .social-media {
       -ms-flex-pack: center;
           justify-content: center;
   grid-gap: 25px;
+}
+
+footer .social-media .fa-github:hover {
+  color: #000;
+}
+
+footer .social-media .fa-facebook:hover {
+  color: #1875ea;
+}
+
+footer .social-media .fa-instagram:hover {
+  color: #d4465c;
+}
+
+footer .social-media .fa-twitter:hover {
+  color: #1c9cea;
 }

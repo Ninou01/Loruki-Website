@@ -20,6 +20,16 @@ header {
             display: flex;
             justify-content: space-around;
             list-style: none;
+
+            li {
+                padding: 0 10px 8px;
+                border-bottom: 2px solid transparent;
+                padding-top: 0;
+                
+                &:hover {
+                    border-bottom: 2px solid white;
+                }
+            }
         }
     }
 
