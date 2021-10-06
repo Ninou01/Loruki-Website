@@ -34,3 +34,31 @@ header {
     }
 
 }
+
+
+
+@media screen and (max-width: 500px) {
+    header {
+
+        .container {
+            flex-direction: column;
+            align-items: center;
+
+            .title {
+                margin-bottom: 25px;
+            }
+        }
+
+        nav {
+            background: hsl(210, 97%, 43%);
+
+            ul {
+                margin: 0 20px;
+
+                li {
+                    padding: 10px 15px;
+                }
+            }
+        }
+    }
+}

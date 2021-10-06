@@ -28,3 +28,26 @@
         grid-column: span 2;
     }
 }
+
+@media screen and (max-width: 769px) {
+    
+    .features-grid {
+        
+        .container {
+            grid-template: none;
+            
+            > * {
+                padding: 40px 20px;
+            }
+        }
+        
+        .grid-child-1 {
+            grid-column: span 1;
+        }
+        
+        .grid-child-2 {
+            grid-column: span 1;
+        }
+    }
+    
+}

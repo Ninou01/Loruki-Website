@@ -52,3 +52,31 @@ footer {
         }
     }
 }
+
+@media screen and (max-width: 769px) {
+
+    footer {
+        height: 350px;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+        }
+
+        .copyright {
+            margin-bottom: 40px;
+        }
+    
+        .links {
+            margin-bottom: 20px;
+        }
+
+        .social-media {
+            justify-content: start;
+            padding-left: 10px;
+        }
+    }
+    
+}

@@ -83,3 +83,23 @@
         }
     }
 }
+
+@media screen and (max-width: 769px) {
+
+    .documentation {
+
+        .container {
+            grid-template: repeat(3, 1fr) / 1fr;
+        }
+
+        &__links {
+            grid-row: span 1;
+        }
+
+        &__introduction {
+            grid-column: span 1;
+            grid-row: span 2;
+        }
+    }
+    
+}

@@ -44,6 +44,7 @@ a {
   border-radius: 5px;
   border: none;
   font-family: 'Lato', sans-serif;
+  font-size: 1rem;
 }
 
 .btn:hover {
@@ -105,6 +106,30 @@ header nav ul li:hover {
   border-bottom: 2px solid white;
 }
 
+@media screen and (max-width: 500px) {
+  header .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .container .title {
+    margin-bottom: 25px;
+  }
+  header nav {
+    background: #036ed8;
+  }
+  header nav ul {
+    margin: 0 20px;
+  }
+  header nav ul li {
+    padding: 10px 15px;
+  }
+}
+
 .hero {
   padding-bottom: 25px;
 }
@@ -137,6 +162,20 @@ header nav ul li:hover {
 
 .hero__image img {
   width: 200px;
+}
+
+@media screen and (max-width: 769px) {
+  .hero .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero__description {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
 }
 
 .documentation {
@@ -226,6 +265,21 @@ header nav ul li:hover {
   font-weight: bold;
 }
 
+@media screen and (max-width: 769px) {
+  .documentation .container {
+    -ms-grid-rows: (1fr)[3];
+    -ms-grid-columns: 1fr;
+        grid-template: repeat(3, 1fr)/1fr;
+  }
+  .documentation__links {
+    grid-row: span 1;
+  }
+  .documentation__introduction {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+}
+
 footer {
   background-color: var(--night-blue);
   height: 200px;
@@ -281,4 +335,37 @@ footer .social-media .fa-instagram:hover {
 
 footer .social-media .fa-twitter:hover {
   color: #1c9cea;
+}
+
+@media screen and (max-width: 769px) {
+  footer {
+    height: 350px;
+  }
+  footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  footer .copyright {
+    margin-bottom: 40px;
+  }
+  footer .links {
+    margin-bottom: 20px;
+  }
+  footer .social-media {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    padding-left: 10px;
+  }
 }

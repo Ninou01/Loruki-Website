@@ -44,6 +44,7 @@ a {
   border-radius: 5px;
   border: none;
   font-family: 'Lato', sans-serif;
+  font-size: 1rem;
 }
 
 .btn:hover {
@@ -105,6 +106,30 @@ header nav ul li:hover {
   border-bottom: 2px solid white;
 }
 
+@media screen and (max-width: 500px) {
+  header .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .container .title {
+    margin-bottom: 25px;
+  }
+  header nav {
+    background: #036ed8;
+  }
+  header nav ul {
+    margin: 0 20px;
+  }
+  header nav ul li {
+    padding: 10px 15px;
+  }
+}
+
 .home-hero {
   padding: 55px 0;
   margin-bottom: 15px;
@@ -139,33 +164,32 @@ header nav ul li:hover {
 .home-hero .container .home-hero__description input[type=button] {
   border: 1px solid #fff;
   padding: 13px 30px;
-  font-size: 0.9rem;
 }
 
-.home-hero .container .form {
+.home-hero .form {
   padding: 45px 30px 30px 30px;
   width: 550px;
   background-color: #fff;
   color: #000;
 }
 
-.home-hero .container .form h3 {
+.home-hero .form h3 {
   margin-bottom: 30px;
   font-size: 1.3rem;
 }
 
-.home-hero .container .form input:not([type=submit]) {
+.home-hero .form input:not([type=submit]) {
   display: block;
   width: 100%;
   margin-bottom: 30px;
   border: none;
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.322);
-  font-size: .9rem;
+  font-size: 1rem;
   outline: none;
 }
 
-.home-hero .container .form input[type=submit] {
-  font-size: 0.75rem;
+.home-hero .form input[type=submit] {
+  font-size: 0.9rem;
   padding: 9px 25px;
 }
 
@@ -189,6 +213,29 @@ header nav ul li:hover {
           transform: skewY(-3deg);
 }
 
+@media screen and (max-width: 769px) {
+  .home-hero {
+    margin-top: -50px;
+  }
+  .home-hero .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home-hero__description {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .home-hero .form {
+    padding: 40px;
+    max-width: 380px;
+  }
+}
+
 .services {
   padding-bottom: 30px;
 }
@@ -199,6 +246,7 @@ header nav ul li:hover {
   margin-bottom: 30px;
   text-align: center;
   font-weight: 700;
+  font-size: 1.2rem;
   line-height: 25px;
 }
 
@@ -242,7 +290,7 @@ header nav ul li:hover {
 }
 
 .services__cli img {
-  width: 60%;
+  width: 65%;
 }
 
 .services__cli > div {
@@ -262,6 +310,33 @@ header nav ul li:hover {
 .services__cli-description {
   font-weight: 700;
   padding: 18px 28px 18px 15px;
+}
+
+@media screen and (max-width: 769px) {
+  .services__description {
+    width: 100%;
+  }
+  .services__cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .services__cards .card {
+    margin-bottom: 30px;
+  }
+  .services__cli {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .services__cli img {
+    width: 100%;
+  }
+  .services__cli > div {
+    width: 100%;
+  }
 }
 
 .cloud {
@@ -302,6 +377,21 @@ header nav ul li:hover {
   color: #fff;
   padding: 13px 24px;
   font-size: 1rem;
+}
+
+@media screen and (max-width: 769px) {
+  .cloud .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cloud__description {
+    margin-bottom: 30px;
+  }
+  .cloud img {
+    max-width: 100%;
+  }
 }
 
 .supported {
@@ -397,4 +487,37 @@ footer .social-media .fa-instagram:hover {
 
 footer .social-media .fa-twitter:hover {
   color: #1c9cea;
+}
+
+@media screen and (max-width: 769px) {
+  footer {
+    height: 350px;
+  }
+  footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  footer .copyright {
+    margin-bottom: 40px;
+  }
+  footer .links {
+    margin-bottom: 20px;
+  }
+  footer .social-media {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    padding-left: 10px;
+  }
 }
