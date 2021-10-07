@@ -151,8 +151,8 @@ header nav ul li:hover {
 }
 
 .home-hero .container .home-hero__description {
-  -webkit-animation: deployment-animation 1000ms ease-in;
-          animation: deployment-animation 1000ms ease-in;
+  -webkit-animation: deployment-animation 1000ms ease-in-out;
+          animation: deployment-animation 1000ms ease-in-out;
 }
 
 .home-hero .container .home-hero__description .home-hero__title {
@@ -176,8 +176,8 @@ header nav ul li:hover {
   width: 550px;
   background-color: #fff;
   color: #000;
-  -webkit-animation: form-animation 1000ms ease-in;
-          animation: form-animation 1000ms ease-in;
+  -webkit-animation: form-animation 1000ms ease-in-out;
+          animation: form-animation 1000ms ease-in-out;
 }
 
 .home-hero .form h3 {
@@ -267,6 +267,7 @@ header nav ul li:hover {
 @media screen and (max-width: 769px) {
   .home-hero {
     margin-top: -50px;
+    overflow: visible;
   }
   .home-hero .container {
     -webkit-box-orient: vertical;
