@@ -6,5 +6,5 @@ The main goal of building this website was to sharpen my skills in html and css,
 
 ## Links
 
-- Live Demo: (https://bit.ly/3oOLwWC)
+- Live Demo: (https://bit.ly/3uS7CJ9)
 - Traversy Media Version: (https://bit.ly/3iCCPL9)
